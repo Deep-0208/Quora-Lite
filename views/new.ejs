@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <div class="brand"><div class="logo"></div><h1>Create Post</h1></div>
+            <div class="actions"><a class="button" href="/posts">Back</a></div>
+        </header>
+
+        <section class="card">
+            <form class="post-form" method="post" action="/post">
+                <label for="username">Name</label>
+                <input type="text" name="username" id="username" placeholder="enter your name" required>
+
+                <label for="content">Content</label>
+                <textarea name="content" id="content" placeholder="write your content" rows="6" required></textarea>
+
+                <button type="submit">Submit Post</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

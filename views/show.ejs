@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post In Detail</title>
+        <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <div class="brand"><div class="logo"></div><h1>Post Detail</h1></div>
+            <div class="actions"><a class="button" href="/posts">Back</a></div>
+        </header>
+
+        <article class="card">
+            <h3 class="user">@<%= post ? post.username : 'Unknown' %></h3>
+            <p class="content"><%= post ? post.content : 'No content' %></p>
+            <p class="muted">ID: <%= post ? post.id : 'N/A' %></p>
+        </article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora Lite</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <div class="brand">
+                <div class="logo"></div>
+                <h1>Quora Lite</h1>
+            </div>
+            <div class="actions">
+                <a class="button" href="/post/new">Create New Post</a>
+            </div>
+        </header>
+
+        <section class="posts-grid">
+            <% for (let post of posts) { %>
+                <article class="card">
+                    <h3 class="user">@<%= post.username %></h3>
+                    <p class="content"><%= post.content %></p>
+                    <a class="detail" href="/post/<%= post.id %>">See in detail →</a>
+                </article>
+            <% } %>
+        </section>
+    </div>
+</body>
+</html>
